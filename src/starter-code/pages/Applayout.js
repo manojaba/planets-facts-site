@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Menu from '../components/Menu';
 import Nav from '../components/Nav';
 import Earth from './Earth';
 import Jupiter from './Jupiter';
@@ -9,11 +10,17 @@ import Neptune from './Neptune';
 import Saturn from './Saturn';
 import Uranus from './Uranus';
 import Venus from './Venus';
-<HashRouter style={{ backgroundImage: `url(${backgroundImage})` }} >
 
-    function Applayout() {
+
+function Applayout() {
 
     const [data, setData] = useState([]);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     useEffect(() => {
         fetch("/data.json")
@@ -23,23 +30,32 @@ import Venus from './Venus';
     })
 
     return (
-    <HashRouter style={{ backgroundImage: `url(${backgroundImage})` }} >
-        <Nav></Nav>
-        <Routes>
-            <Route path='/' element={<Mercury />}></Route>
-            <Route path='/venus' element={<Venus />}></Route>
-            <Route path='/earth' element={<Earth />}></Route>
-            <Route path='/mars' element={<Mars />}></Route>
-            <Route path='/jupiter' element={<Jupiter />}></Route>
-            <Route path='/saturn' element={<Saturn />}></Route>
-            <Route path='/uranus' element={<Uranus />}></Route>
-            <Route path='/neptune' element={<Neptune />}></Route>
+        <div style={{ backgroundImage: `url(/assets/background-stars.svg)` }} className='  bg-[#070724]'>
+            <HashRouter   >
+                <Nav toggleMenu={toggleMenu}></Nav>
+                {menuOpen ? (
+                    <Menu />
+                ) : (
+                    <Routes>
+                        <Route path='/' element={<Mercury />}></Route>
+                        <Route path='/venus' element={<Venus />}></Route>
+                        <Route path='/earth' element={<Earth />}></Route>
+                        <Route path='/mars' element={<Mars />}></Route>
+                        <Route path='/jupiter' element={<Jupiter />}></Route>
+                        <Route path='/saturn' element={<Saturn />}></Route>
+                        <Route path='/uranus' element={<Uranus />}></Route>
+                        <Route path='/neptune' element={<Neptune />}></Route>
 
 
-        </Routes>
+                    </Routes>
+                )}
 
-    </HashRouter >
+
+            </HashRouter >
+
+        </div>
+
     )
 }
 
-    export default Applayout
+export default Applayout
