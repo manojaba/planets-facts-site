@@ -26,10 +26,10 @@ export default function Neptune({ content }) {
                 <div className=''>
                     <div className='flex flex-col xl:flex-row  w-full text-center xl:px-[165px] xl:gap-[100px]  '>
                         <div className=' h-[300px] md:h-[460px] xl:h-[754px] w-full xl:w-2/3 flex items-center justify-center relative '>
-                            <img style={{ display: activeButton === 'overview' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.planet.replace('./assets', '/assets')} alt={`${content.name} planet `}></img>
-                            <img style={{ display: activeButton === 'structure' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.internal.replace('./assets', '/assets')} alt={`${content.name} internal `}></img>
-                            <img style={{ display: activeButton === 'surface' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.planet.replace('./assets', '/assets')} alt={`${content.name} planet `}></img>
-                            <img style={{ display: activeButton === 'surface' ? 'block' : 'none' }} className=' h-auto max-w-[80px]  md:max-w-[120px] xl:max-w-[163px] object-contain absolute bottom-[15%]' src={content.images.geology.replace('./assets', '/assets')} alt={`${content.name}geology`}></img>
+                            <img style={{ display: activeButton === 'overview' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.planet} alt={`${content.name} planet `}></img>
+                            <img style={{ display: activeButton === 'structure' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.internal} alt={`${content.name} internal `}></img>
+                            <img style={{ display: activeButton === 'surface' ? 'block' : 'none' }} className=' h-auto max-w-[173px]  md:max-w-[285px] xl:max-w-[450px] object-contain' src={content.images.planet} alt={`${content.name} planet `}></img>
+                            <img style={{ display: activeButton === 'surface' ? 'block' : 'none' }} className=' h-auto max-w-[80px]  md:max-w-[120px] xl:max-w-[163px] object-contain absolute bottom-[15%]' src={content.images.geology} alt={`${content.name}geology`}></img>
 
 
 

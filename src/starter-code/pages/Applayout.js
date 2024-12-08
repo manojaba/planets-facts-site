@@ -35,7 +35,7 @@ function Applayout() {
     }
 
     return (
-        <div style={{ backgroundImage: `url(/assets/background-stars.svg)` }} className='  bg-[#070724]'>
+        <div style={{ backgroundImage: `url(./assets/background-stars.svg)` }} className='  bg-[#070724]'>
             <HashRouter   >
                 <Nav toggleMenu={toggleMenu} data={data}></Nav>
                 {menuOpen ? (
