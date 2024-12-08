@@ -12,7 +12,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -24,7 +24,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -37,7 +37,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -50,7 +50,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -63,7 +63,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -76,7 +76,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 
@@ -88,7 +88,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
             <div className='flex items-center justify-between mx-[24px] py-[20px]' onClick={toggleMenu}>
@@ -99,7 +99,7 @@ function Menu({ toggleMenu }) {
 
                     </div>
                 </NavLink>
-                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg'></img>
+                <img className='h-[8px] w-[6px]' src='/assets/icon-chevron.svg' alt='chevron arrow'></img>
 
             </div>
 

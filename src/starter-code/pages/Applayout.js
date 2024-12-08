@@ -37,19 +37,19 @@ function Applayout() {
     return (
         <div style={{ backgroundImage: `url(/assets/background-stars.svg)` }} className='  bg-[#070724]'>
             <HashRouter   >
-                <Nav toggleMenu={toggleMenu}></Nav>
+                <Nav toggleMenu={toggleMenu} data={data}></Nav>
                 {menuOpen ? (
                     <Menu toggleMenu={toggleMenu} />
                 ) : (
                     <Routes>
                         <Route path='/' element={<Mercury content={data[0]} />}></Route>
                         <Route path='/venus' element={<Venus content={data[1]} />}></Route>
-                        <Route path='/earth' element={<Earth />}></Route>
-                        <Route path='/mars' element={<Mars />}></Route>
-                        <Route path='/jupiter' element={<Jupiter />}></Route>
-                        <Route path='/saturn' element={<Saturn />}></Route>
-                        <Route path='/uranus' element={<Uranus />}></Route>
-                        <Route path='/neptune' element={<Neptune />}></Route>
+                        <Route path='/earth' element={<Earth content={data[2]} />}></Route>
+                        <Route path='/mars' element={<Mars content={data[3]} />}></Route>
+                        <Route path='/jupiter' element={<Jupiter content={data[4]} />}></Route>
+                        <Route path='/saturn' element={<Saturn content={data[5]} />}></Route>
+                        <Route path='/uranus' element={<Uranus content={data[6]} />}></Route>
+                        <Route path='/neptune' element={<Neptune content={data[7]} />}></Route>
 
 
                     </Routes>
