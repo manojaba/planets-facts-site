@@ -38,19 +38,19 @@ export default function Neptune({ content }) {
                             <div style={{ display: activeButton === 'overview' ? 'block' : 'none' }} className='flex flex-col md:w-1/2 xl:w-full '>
                                 <h1 className='font-antonio font-medium text-[40px] md:text-[48px] xl:text-[80px]'>{content.name.toUpperCase()}</h1>
                                 <p className='font-spartan font-normal text-[11px] xl:text-[14px] leading-[22px] xl:leading-[25px] mt-[16px] mb-[32px]'>{content.overview.content}</p>
-                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.overview.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold'> Wikipedia</span><img src='/assets/icon-source.svg'></img></a></p>
+                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.overview.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold'> Wikipedia</span><img src='./assets/icon-source.svg' alt={`${content.name} wikipedia link`}></img></a></p>
 
                             </div>
                             <div style={{ display: activeButton === 'structure' ? 'block' : 'none' }} className='flex flex-col md:w-1/2 xl:w-full  '>
                                 <h1 className='font-antonio font-medium text-[40px] md:text-[48px] xl:text-[80px]'>{content.name.toUpperCase()}</h1>
                                 <p className='font-spartan font-normal text-[11px] xl:text-[14px] leading-[22px] xl:leading-[25px] mt-[16px] mb-[32px]'>{content.structure.content}</p>
-                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.structure.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold '> Wikipedia</span><img src='/assets/icon-source.svg'></img></a></p>
+                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.structure.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold '> Wikipedia</span><img src='./assets/icon-source.svg' alt={`${content.name} wikipedia link`}></img></a></p>
 
                             </div>
                             <div style={{ display: activeButton === 'surface' ? 'block' : 'none' }} className='flex flex-col md:w-1/2 xl:w-full  '>
                                 <h1 className='font-antonio font-medium text-[40px] md:text-[48px] xl:text-[80px]'>{content.name.toUpperCase()}</h1>
                                 <p className='font-spartan font-normal text-[11px] xl:text-[14px] leading-[22px] xl:leading-[25px] mt-[16px] mb-[32px]'>{content.geology.content}</p>
-                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.geology.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold '> Wikipedia</span><img src='/assets/icon-source.svg'></img></a></p>
+                                <p className='opacity-50 flex items-center font-spartan font-medium text-[12px] leading-[25px] xl:text-[14px]' >Source : <a href={content.geology.source} target='blank' className='flex items-center space-x-[4px] '><span className='border-white border-b-2 font-bold '> Wikipedia</span><img src='./assets/icon-source.svg' alt={`${content.name} wikipedia link`}></img></a></p>
 
                             </div>
                             <div className=' hidden md:flex md:flex-col items-center justify-center md:w-1/2 xl:w-full   space-y-[16px]   '>
