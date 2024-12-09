@@ -15,7 +15,7 @@ function Nav({ toggleMenu, data }) {
 
     return (
         <nav className='flex md:flex-col xl:flex-row items-center  justify-between  px-[24px] md:px-[50px] py-[16px] md:pt-[32px]  md:pb-0 xl:pl-[32px] xl:pr-[40px] xl:py-0 border-b-2 border-white border-opacity-20  '>
-            <h1 className='font-antonio font-medium text-white text-[28px] tracking-[-1.05px] '>THE PLANETS</h1>
+            <button className='font-antonio font-medium text-white text-[28px] tracking-[-1.05px] ' onClick={() => toggleButton('mercury')}><Link to='/'>THE PLANETS</Link></button>
 
 
             <div className='font-spartan font-bold text-[11px] leading-[25px] tracking-[1px] hidden md:flex text-white text-opacity-75  w-full xl:w-fit xl:gap-[32px] justify-between   '>
@@ -50,7 +50,7 @@ function Nav({ toggleMenu, data }) {
 
 
             </div>
-            <img className='md:hidden' src='/assets/icon-hamburger.svg' alt='hamburger' onClick={toggleMenu}></img>
+            <img className='md:hidden' src='./assets/icon-hamburger.svg' alt='hamburger' onClick={toggleMenu}></img>
 
 
 
